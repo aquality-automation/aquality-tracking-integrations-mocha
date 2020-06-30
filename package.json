@@ -1,0 +1,32 @@
+{
+  "name": "@aquality-automation/aquality-tracking-integrations-mocha",
+  "version": "1.0.0",
+  "description": "A Plugin to send results to Aquality Tracking",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter src/aqualityReporter.js --reporter-options projectId=32,url=http://localhost:8080/api"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aquality-automation/aquality-tracking-integrations-mocha.git"
+  },
+  "keywords": [
+    "mocha",
+    "aquality-tracking",
+    "aquality"
+  ],
+  "author": "Vladislav Kostyukevich",
+  "license": "ISC",
+  "bin": {
+    "aqualityReporter": "./cli.js"
+  },
+  "bugs": {
+    "url": "https://github.com/aquality-automation/aquality-tracking-integrations-mocha/issues"
+  },
+  "homepage": "https://github.com/aquality-automation/aquality-tracking-integrations-mocha#readme",
+  "dependencies": {
+    "diff": "^4.0.2",
+    "mocha": "^8.0.1",
+    "sync-request": "^6.1.0"
+  }
+}
